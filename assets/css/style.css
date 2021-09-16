@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*:root {
+  --color-primary: blue;
+}
+body header h1 {
+  color: var(--color-primary);
+}
+body header h1:hover {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 500%;
+  font-style: italic;
+  text-align: center;
+}*/
+header {
+  padding: 20px 50px;
+  height: 150px;
+  float: initial;
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  opacity: 1;
+  
+}
+header a {
+  text-decoration: none;
+}
+header h1 {
+  display: inline;
+  float: left;
+  margin: 20px 20px;
+}
+header h1 a {
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+}
+header nav {
+  float: right;
+  margin: 28px;
+  
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 10px 20px;
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+}

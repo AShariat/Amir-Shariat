@@ -18,20 +18,19 @@ body header h1:hover {
 }*/
 header {
   padding: 20px 50px;
-  height: 150px;
-  float: initial;
   background-image: url(../images/hero.jpg);
   background-position: center;
   position: relative;
   background-size: cover;
   opacity: 1;
-  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 header a {
   text-decoration: none;
 }
 header h1 {
-  display: inline;
   float: left;
   margin: 20px 20px;
 }
@@ -41,7 +40,6 @@ header h1 a {
   font-weight: bolder;
 }
 header nav {
-  float: right;
   margin: 28px;
   
 }

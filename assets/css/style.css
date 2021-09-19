@@ -23,11 +23,8 @@ header a {
   text-decoration: none;
   color: var(--color-secondary);
 }
-header h1 {
-  font-size: 3.5vw;
-  font-weight: bolder;
-  background-color: var(--color-primary);
-  display: flex;
+.logo {
+  width: 5vw;
 }
 header nav {
   margin: auto 0;
@@ -40,12 +37,12 @@ header nav ul {
   list-style: none;
 }
 header nav ul li a {
-  margin: 20px;
-  font-weight: bold;
+  padding: 5px 15px;
+  font-weight: normal;
   font-size: 2vw;
   background-color: var(--color-primary);
 }
-header a:hover {
+header nav a:hover {
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
@@ -53,20 +50,32 @@ header a:hover {
   border: 0.5vw solid var(--color-primary);
   background-image: url(../images/hero.jpg);
   background-size: cover;
-  background-position: center;
+  background-position-y: 36%;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: flex-start;
+}
+.hero-text {
+  margin: 1.5vw 1vw;
+  width: 15%;
+  color: var(--color-primary);
+}
+.hero-text p {
+  font-weight: lighter;
+  line-height: 1.9;
+  font-size: 1.5vw;
+  text-align: right;
+  text-justify: auto;
+}
+.hero-text span {
+  font-weight: bold;
+  float: right;
+  line-height: 2;
+  font-size: 2vw;
 }
 .hero-image img {
   width: 20vw;
   margin: 1vw;
   border: 0.2vw solid var(--color-primary);
-}
-.hero-text h2 {
-  color: var(--color-primary);
-  margin: 1.25vw;
-  font-size: 2vw;
-  text-align: left;
-  padding-right: 80%;
 }

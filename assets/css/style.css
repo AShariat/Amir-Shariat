@@ -76,7 +76,7 @@ header nav a:hover {
   color: var(--color-primary);
   display: flex;
   flex-direction: column;
-  flex: 1 80%;
+  flex: 1 1%;
 }
 .hero-text p {
   font-weight: lighter;
@@ -94,7 +94,7 @@ header nav a:hover {
 }
 .hero-image {
   display: flex;
-  flex: 1 25%;
+  flex: 1 1%;
   justify-content: right;
 }
 .hero-image img {

@@ -1,15 +1,5 @@
 Advanced CSS: Portfolio
 
-Welcome to this week's Challenge! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
-
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: at many companies, having several deployed projects is a minimum requirement to receive an initial interview. 
-
-With these points in mind, in this Challenge you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you'll use during your job search. It’s a win-win that you'll likely be grateful for in the future!
-
-**Note**: If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
-
-Let’s look at what a user story written from the perspective of a hiring manager might look like. As you might remember, we follow the AS AN / I WANT / SO THAT format.
-
 ## User Story
 
 ```
@@ -36,13 +26,22 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-## Review
+First I created two separate branches for my application, one named "main" branch which is live and the other one is "develop" branch that I used for my coding.
 
-You are required to submit BOTH of the following for review:
+I created my header and hero section as below:
 
-* The URL of the deployed application.
+![](image/README/1632131058799.png)
 
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+I put a logo of me instead of my name that if you click on it, it will take you back to the home page and also a navigation bar on the right side of header.
+Then in hero section I included a qoute I like from Pele and also a picture of me.
 
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+After that you see the three sections of my page as below:
+
+![](image/README/1632131307105.png)
+
+![](image/README/1632131341647.png)
+
+![](image/README/1632131348827.png)
+
+and this is the address of my deployed application:
+https://ashariat.github.io/

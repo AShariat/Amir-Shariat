@@ -6,7 +6,7 @@
 }
 :root {
   --color-primary: #eee;
-  --color-secondary: #337AB7;
+  --color-secondary: black;
 }
 body {
   background-color: var(--color-primary);
@@ -17,29 +17,16 @@ header {
   background-attachment: fixed;
   background-position: 80%;
   padding: 1em 2em;
-  /* background-color: var(--color-secondary); */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* margin: 5px; */
-  /* position: -webkit-sticky; */
-  /* We should always put the standardized version of a property at the end of a sequence of vendor-prefixed versions. */
-  /* position: sticky; */
-  /* top: 0; */
-  /* places the image relative to the viewport instead of the element. */
-  /* Add the following declaration to the header rule to keep this element on top: A higher z-index brings the element to the front while a lower z-index pushes it to the back. A value of z-index: 1; would still fix the header and form problem. We might need to add z-index to other elements, though, and we want to ensure that the header is always on top, so we'll go with 9999 to avoid future conflicts. */
-  /* z-index: 9999; */
 }
-/* .logo {
-  background-color: var(--color-primary);
-  width: 3em;
-} */
 header a {
   text-decoration: none;
   display: flex;
   align-items: center;
   font-size: 2rem;
-  color: white;
+  color: var(--color-primary);
   font-weight: bolder;
 }
 header nav {
@@ -58,21 +45,14 @@ header nav ul li a {
   margin: 0 15px;
   font-size: 1.75rem;
   text-decoration: none;
-  color: white;
+  color: var(--color-primary);
   font-weight: normal;
 }
 header nav a:hover {
   font-style: italic;
 }
 .hero {
-  /* margin: 5px; */
   background-image: url(../images/hero.jpg);
-  /* background-size: cover; */
-  height: 400px;
-  /* background-position-y: 10%; */
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start; */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -80,16 +60,14 @@ header nav a:hover {
   flex-wrap: wrap;
   /* places the image relative to the viewport instead of the element. */
   background-attachment: fixed;
-  /* background-position: 100%; */
 }
 .hero-text {
   margin: 1em;
-  color: white;
+  color: var(--color-primary);
   display: flex;
   flex-direction: column;
-  /* flex: 1 100%; */
-  width: 25%;
   justify-content: center;
+  flex: 0 25%;
 }
 .hero-text p {
   font-size: 1.25rem;
@@ -105,10 +83,8 @@ header nav a:hover {
   text-align: right;
 }
 .amir-image {
-  width: 1em;
-  display: flex;
-  flex: 1 100%;
-  justify-content: right;
+  width: 250px;
+  height: 326px;
 }
 #about-me, #work, #contact-me {
   margin: 40px;
@@ -117,7 +93,7 @@ header nav a:hover {
   justify-content: flex-start;
 }
 .section-title {
-  border-right: 0.2em solid black;
+  border-right: 0.2em solid var(--color-secondary);
   padding: 20px;
   font-size: 1.75rem;;
   display: flex;
@@ -129,7 +105,6 @@ header nav a:hover {
 }
 #about-me {
   display: flex;
-
 }
 #about-me p {
   padding: 1em;
@@ -137,8 +112,7 @@ header nav a:hover {
   font-weight: normal;
   text-align: justify;
   display: flex;
-  flex-wrap: wrap;
-  flex: 1 1%;
+  flex: 1;
 }
 .work {
   padding: 20px;
@@ -154,11 +128,12 @@ header nav a:hover {
   width: 200px;
 }
 .work div:hover {
-  border: 1px solid red;
+  border: 5px solid red;
+  margin: 15px;
 }
 h2, h3 {
   background-color: var(--color-secondary);
-  color: white;
+  color: var(--color-primary);
   text-align: center;
 }
 h2 {
@@ -174,7 +149,6 @@ h3 {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  /* flex: 1 1%; */
 }
 #contact-me ul li {
   display: flex;
@@ -184,14 +158,12 @@ h3 {
   font-size: 1.5rem;
   text-decoration: none;
   padding: 1em;
-  color: black;
+  color: var(--color-secondary);
 }
 #contact-me ul li a:hover {
   font-style: italic;
 }
 footer {
-  /* margin: 5px; */
-  /* background-color: var(--color-secondary); */
   background-image: url(../images/hero.jpg);
   background-position: bottom;
   text-align: center;
@@ -199,5 +171,17 @@ footer {
 h4 {
   font-size: 1rem;
   padding: 1em;
-  color: white;
+  color: var(--color-primary);
+}
+@media screen and (max-width: 640px) {
+  .amir-image {
+    width: 125px;
+    height: 163px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .amir-image {
+    width: 62.5px;
+    height: 81.5px;
+  }
 }

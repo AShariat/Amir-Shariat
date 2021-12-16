@@ -2,37 +2,31 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 :root {
-  --color-primary: #dbdbdb;
+  --color-primary: #eee;
   --color-secondary: black;
 }
 body {
   background-color: var(--color-primary);
 }
 header {
-  padding: 10px 30px;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/hero.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.logo {
-  width: 100px;
-}
-.logo:hover {
-  width: 120px;
-}
 header a {
-  color: var(--color-secondary);
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 3.5vw;
+  font-size: 2rem;
+  color: var(--color-primary);
   font-weight: bolder;
 }
 header nav {
@@ -48,59 +42,49 @@ header nav ul {
   list-style: none;
 }
 header nav ul li a {
-  padding: 0 5px;
   margin: 0 15px;
-  font: menu;
-  font-weight: bolder;
-  font-size: 2.5vw;
-  background-color: var(--color-primary);
+  font-size: 1.75rem;
   text-decoration: none;
-  color: var(--color-secondary);
+  color: var(--color-primary);
+  font-weight: normal;
 }
 header nav a:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
   font-style: italic;
 }
 .hero {
-  margin: 5px;
   background-image: url(../images/hero.jpg);
   background-size: cover;
-  background-position-y: 30%;
+  background-position: center;
   display: flex;
+  justify-content: right;
   flex-wrap: wrap;
-  align-items: flex-start;
+  /* places the image relative to the viewport instead of the element. */
+  background-attachment: fixed;
 }
 .hero-text {
-  margin: 5px;
+  margin: 1em;
   color: var(--color-primary);
   display: flex;
   flex-direction: column;
-  flex: 1 100%;
+  justify-content: center;
+  flex: 0 25%;
 }
 .hero-text p {
-  font-weight: lighter;
-  line-height: 1;
-  font-size: 28px;
-  text-align: center;
-  margin: 5px;
+  font-size: 1.25rem;
+  text-align: right;
+  margin: 1em;
+  line-height: 2;
 }
 .hero-text span {
   font-weight: bold;
-  margin: 5px 20px;
-  font-size: 36px;
+  margin: 1em;
+  font-size: 1.5rem;
   font-style: italic;
   text-align: right;
 }
-.hero-image {
-  display: flex;
-  flex: 1 100%;
-  justify-content: right;
-}
-.hero-image img {
-  width: 300px;
-  margin: 5px;
-  border: 0.2vw solid var(--color-primary);
+.amir-image {
+  width: 250px;
+  height: 326px;
 }
 #about-me, #work, #contact-me {
   margin: 40px;
@@ -109,24 +93,26 @@ header nav a:hover {
   justify-content: flex-start;
 }
 .section-title {
-  border-right: 5px solid var(--color-secondary);
+  border-right: 0.2em solid var(--color-secondary);
   padding: 20px;
-  font-size: 45px;
+  font-size: 1.75rem;;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   text-align: end;
   margin: 0 10px;
-  width: 150px;
+  width: 3.25em;
+}
+#about-me {
+  display: flex;
 }
 #about-me p {
-  padding: 20px;
-  font-size: 36px;
+  padding: 1em;
+  font-size: 1.5rem;
   font-weight: normal;
   text-align: justify;
   display: flex;
-  flex-wrap: wrap;
-  flex: 1 1%;
+  flex: 1;
 }
 .work {
   padding: 20px;
@@ -139,26 +125,23 @@ header nav a:hover {
   margin: 20px;
 }
 .work-image {
-  width: 300px;
+  width: 200px;
 }
-.work-image:hover {
-  width: 400px;
+.work div:hover {
+  border: 5px solid red;
+  margin: 15px;
 }
 h2, h3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  text-align: center;
 }
 h2 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 1rem;
 }
 h3 {
-  font-size: 20px;
+  font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
 }
 #contact-me ul {
   display: flex;
@@ -166,35 +149,39 @@ h3 {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  flex: 1 1%;
 }
 #contact-me ul li {
   display: flex;
   flex-wrap: wrap;
 }
 #contact-me ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1em;
   color: var(--color-secondary);
-  font-size: 24px;
-  margin: 20px;
-  font-weight: bold;
 }
 #contact-me ul li a:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  font-size: 30px;
   font-style: italic;
 }
 footer {
-  background-image: url(../images/header.jpg);
-  background-size: cover;
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-image: url(../images/hero.jpg);
+  background-position: bottom;
+  text-align: center;
 }
 h4 {
-  font-size: 30px;
-  padding: 10px;
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
+  font-size: 1rem;
+  padding: 1em;
+  color: var(--color-primary);
+}
+@media screen and (max-width: 640px) {
+  .amir-image {
+    width: 125px;
+    height: 163px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .amir-image {
+    width: 62.5px;
+    height: 81.5px;
+  }
 }

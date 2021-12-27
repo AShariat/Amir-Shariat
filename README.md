@@ -21,3 +21,10 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+
+##Solved Application
+![readme1](https://user-images.githubusercontent.com/88262115/147428942-beec921d-2489-4f29-9d8d-4f84697f0840.jpg)
+![readme2](https://user-images.githubusercontent.com/88262115/147428948-9a035015-7f37-43ce-b621-29149afcd2fb.jpg)
+
+## Link to the Application
+https://ashariat.github.io/amir-shariat/

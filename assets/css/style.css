@@ -119,13 +119,17 @@ header nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
   flex: 1 1%;
 }
 .work div {
   margin: 20px;
 }
+.work-image-first {
+  width: 250px;
+}
 .work-image {
-  width: 200px;
+  width: 150px;
 }
 .work div:hover {
   border: 5px solid red;
